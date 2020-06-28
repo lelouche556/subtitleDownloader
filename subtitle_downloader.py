@@ -42,7 +42,7 @@ class Subtitle:
             # if subtitle does not exist already
             if not os.path.exists(file_name):
                 headers = { 'User-Agent' : 'SubDB/1.0 (Movie Subtitle Downloader/1.0; https://github.com/lelouche556/subtitleDownloader)' }
-                url = "http://api.thesubdb.com/?action=download&hash=" + get_hash(file_path) + "&language=" + Language_code
+                url = "http://api.thesubdb.com/?action=download&hash=" + self.get_hash() + "&language=" + Language_code
                 req = urllib.request.Request(url, None,headers)
                 response = urllib.request.urlopen(req).read()
 
