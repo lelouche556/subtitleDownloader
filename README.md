@@ -1,2 +1,2 @@
 # subtitleDownloader
-A way to download subtitles for Your movies and tc shows directly.
+A way to download subtitles for Your movies and tv shows directly.
